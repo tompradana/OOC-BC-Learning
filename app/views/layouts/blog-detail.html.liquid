@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+  {% include 'layout/head-blog-detail' %}
+</head>
+</head>
+
+<body>
+  <div class="header">
+    <div class="wrapIt">
+      <a href="/"><img src="/Images/logo-100.png" style="max-height: 79px" />
+      </a>
+    </div>
+  </div>
+  <div class="title">
+    <div class="wrapIt">
+      <h1>{{ context.page.metadata.pagetitle }}</h1>
+      <div class="clearAll"></div>
+    </div>
+  </div>
+  <div class="contentPag">
+    <div class="wrapIt">
+      <div class="bread">You are here: {{ context.page.metadata.pagetitle }}</div>
+      <div class="blogL">
+        <div id="catblogoutput">
+          <div itemtype="http://schema.org/Article" class="blog-post" itemscope="true">
+            <div itemprop="articleBody">
+              {{ content_for_layout }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blogR">
+        <a sw="1" catid="58,10785" id="rss" href="/RSSRetrieve.aspx?ID=10785&amp;Type=RSS20" target="_blank">Subscribe via RSS: <img width="16" height="16" style="border-width: 0px; border-style: solid;" alt="RSS" src="/CatalystImages/RSS.png?vs=b339.r524375-phase1" /></a>
+        <h2>Recent Posts</h2>
+        <div class="BlogRecentPost">
+          <ul>
+            <li><a href="/online-business-growth/the-fundamentals-of-seo" title="The Fundamentals of SEO ">The Fundamentals of SEO </a></li>
+            <li><a href="/online-business-growth/how-to-implement-google-ads" title="How to Implement Google Ads">How to Implement Google Ads</a></li>
+            <li><a href="/online-business-growth/essential-features-of-a-quality-website" title="Essential Features of a Quality Website">Essential Features of a Quality Website</a></li>
+            <li><a href="/online-business-growth/common-social-advertising-mistakes" title="Common Social Advertising Mistakes">Common Social Advertising Mistakes</a></li>
+            <li><a href="/online-business-growth/the-must-know-on-landing-pages" title="The Must Know on Landing Pages">The Must Know on Landing Pages</a></li>
+            <li><a href="/online-business-growth/why-small-businesses-need-local-seo" title="Why Small Businesses Need Local SEO">Why Small Businesses Need Local SEO</a></li>
+            <li><a href="/online-business-growth/custom-website-design" title="Custom Website Design">Custom Website Design</a></li>
+            <li><a href="/online-business-growth/the-end-of-one-era-start-of-a-new" title="The end of one Era, Start of a new">The end of one Era, Start of a new</a></li>
+            <li><a href="/online-business-growth/the-importance-of-websites-that-convert-visitors-to-customers" title="The Importance of Websites that Convert Visitors to Customers">The Importance of Websites that Convert Visitors to Customers</a></li>
+            <li><a href="/online-business-growth/why-facebook-business-owners-need-to-boost-posts" title="Why Facebook Business Owners Need to Boost Posts">Why Facebook Business Owners Need to Boost Posts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearAll"></div>
+    </div>
+  </div>
+  {% include 'layout/blog-detail-footer' %}
+</body>
+
+</html>

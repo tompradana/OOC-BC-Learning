@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include 'layout/head' %}
+</head>
+<body>
+  {% include 'layout/header' %}
+	<main>
+		{{ content_for_layout }}
+	</main>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+</body>
+</html>

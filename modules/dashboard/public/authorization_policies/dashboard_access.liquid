@@ -1,0 +1,7 @@
+---
+name: dashboard_access
+redirect_to: "/log-in"
+flash_alert: "Only dashboard admin can see this page. Please contact page administrator."
+---
+{%- query_graph "modules/dashboard/dashboard_current_user", result_name: g -%}
+{% if g.current_user.id != blank and g.current_user.dashboard.admin == 'true' %}true{% endif %}

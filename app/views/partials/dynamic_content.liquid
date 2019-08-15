@@ -1,0 +1,12 @@
+{% content_for 'meta_title' %}{{ page.metadata.pagetitle }}{% endcontent_for %}
+{% content_for 'pagetitle' %}{{ page.metadata.pagetitle }}{% endcontent_for %}
+{% content_for 'subtitle' %}{{ page.metadata.desc }}{% endcontent_for %}
+{% content_for 'tags' %}
+<p><strong>This paged archived under these tags</strong></p>
+<p>{{ page.metadata.tags | join: ", " }}</p>
+{% endcontent_for %}
+{% content_for 'back_to_home' %}
+<p>
+	<a href="/">&larr; Back to Home</a>
+</p>
+{% endcontent_for %}

@@ -1,0 +1,12 @@
+---
+name: must_be_logged_in
+redirect_to: >
+  {% if params.role %}
+    /log-in?role={{ params.role }}
+  {% else %}
+    /log-in
+  {% endif %}
+flash_alert: 'Please log in before trying to access private section.'
+---
+{%- query_graph 'modules/signup/current_user', result_name: g -%}
+{% if g.current_user.id != blank %}true{% endif %}

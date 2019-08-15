@@ -1,0 +1,7 @@
+---
+name: not_logged_in
+redirect_to: "/"
+flash_alert: 'You are already logged in.'
+---
+{%- query_graph 'modules/signup/current_user', result_name: g -%}
+{% if g.current_user.id == blank %}true{% endif %}

@@ -1,0 +1,10 @@
+query get_google_analytics {
+  customizations(is_deleted: false, name: "modules/dashboard/dashboard_analytics") {
+    total_entries
+    total_pages
+    results {
+      id
+      project_name: property(name: "project_name")
+    }
+  }
+}

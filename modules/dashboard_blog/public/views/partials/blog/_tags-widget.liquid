@@ -1,0 +1,21 @@
+<div class="o-widget">
+
+  {% if widget_title %}
+    <div class="o-widget__title">{{ widget_title }}</div>
+  {% endif %}
+
+  <ul class="c-tags-list">
+
+    {%- for tag in tags -%}
+      <li class="c-tags-list__item">
+
+        <a class="c-tags-list__link" href="/blog/category/{{ tag | parameterize }}">
+          {{ tag }}
+        </a>
+
+      </li>
+    {%- endfor -%}
+
+  </ul>
+
+</div>

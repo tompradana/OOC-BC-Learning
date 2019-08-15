@@ -1,0 +1,16 @@
+---
+slug: metadata
+layout_name: my_custom_layout
+metadata:
+  pagetitle: Learning Metadata 
+  desc: I'm currently learning about metadata
+  tags: ["metadata", "liquid"]
+---
+
+{% include 'dynamic_content' %}
+
+<pre>
+pagetitle: {{ page.metadata.pagetitle }}
+desc: {{ page.metadata.desc }}
+tags: {{ page.metadata.tags | join: ", " }}
+</pre>

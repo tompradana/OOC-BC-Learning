@@ -1,0 +1,10 @@
+mutation migration_create_customization($data: CustomizationInputType!) {
+  customization_create ( 
+    customization: $data
+  ) {
+    id
+    properties
+  }
+}
+
+

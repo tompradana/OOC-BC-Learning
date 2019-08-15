@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include 'layout/head' %}
+</head>
+<body>
+  {% include 'layout/header' %}
+	<main>
+		<div class="container">
+			<div class="wrapper">
+				<div class="page-title">
+					<h1>{% yield 'pagetitle' %}</h1>
+					<span class="subtitle">{% yield 'subtitle' %}</span>
+				</div>
+				<div class="content">
+					<div class="left-content">
+						{{ content_for_layout }}
+
+						{% yield 'back_to_home' %}
+					</div>
+					{% include 'layout/aside' %}
+					<div style="clear:both"></div>
+				</div>
+				<div class="tags">
+					{% yield 'tags' %}
+				</div>
+			</div>
+		</div>
+	</main>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+</body>
+</html>

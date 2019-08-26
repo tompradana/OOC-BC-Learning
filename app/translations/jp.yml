@@ -1,0 +1,5 @@
+jp:
+  general:
+    greeting: こんにちは世界
+  personal:
+    hello: 'こんにちは、%{name}。私のウェブサイトを見てください：%{url}'

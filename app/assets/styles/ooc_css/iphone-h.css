@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+body{font-size:14px;}
+.wrapIt{width:440px;}
+.header{height:110px;}
+
+a.logo{float:none;background:url(../../images/ooc-cow-m.png) no-repeat left center;width:280px;height:70px;margin:0px auto;}
+.home a.logo{ width:255px;}
+nav{ float:none;margin-top:0px; text-transform:uppercase;}
+nav ul,nav li{ display:none;}
+nav select{width:440px; font-family:Arial, Helvetica, sans-serif;font-size:13px;color:#666;height:30px;}
+
+.title{padding-top:140px;}
+.banner{background:url(../../images/banner-s2.png) repeat-x bottom center;height:302px;border-bottom:1px solid #fff;-moz-box-shadow:0px 2px 5px 0px #aaa;box-shadow:0px 2px 5px 0px #aaa;-webkit-box-shadow:0px 2px 5px 0px #aaa;padding-top:110px;}
+.cow{display:none;}
+.tagLine{display:none;}
+a.phone{font-family:futura;font-weight:bold;color:#000; text-decoration:none;text-transform:uppercase;float:none;text-align:center;font-size:20px;margin-top:10px;height:20px;width:440px;display:block;}
+a.phone:hover{color:#f58120;}
+.gray{font-size:16px;}
+.gray h1{ font-size:30px;}
+
+.leads{width:100%;margin-right:0px;float:none;MARGIN-BOTTOM:50PX;}
+.footer .col{width:100%;float:none;margin-right:0px;margin-bottom:50px;}
+.footer .last{width:100%;float:none;margin:0px;}
+
+.homeL{float:none;width:100%;margin-bottom:50px;}
+.homeR{float:none;width:100%;}
+.newsBox{width:100%;float:none;margin-right:0px;margin-bottom:30px;}
+.homeR .arrow{top:100px;left:100px;}
+.testiBox{width:280px;}
+
+.title h1{font-size:24px;}
+h2{font-size:24px;}
+.col2{width:100%;float:none;}
+.blogL{width:100%;float:none;margin-bottom:30px;}
+.blogR{width:100%;float:none;}
+
+.BlogRecentPost li, .BlogTagList li, .BlogPostArchive li {font-size: 14px;}
+input.cat_textbox,select.cat_dropdown,textarea.cat_listbox{font-size:14px;}
+input.cat_button{font-size:14px;}
+.form label, .webform label {font-size: 14px;}
+
+

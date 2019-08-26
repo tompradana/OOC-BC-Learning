@@ -1,2 +1,5 @@
 pl:
-  greeting: Dzien dobry świecie
+  general:
+    greeting: Dzien dobry świecie
+  personal:
+    hello: 'Cześć %{name}. Zerknij na moją stronę www: %{url}'

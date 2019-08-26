@@ -1,2 +1,5 @@
 en:
-  greeting: Hello world
+  general:
+    greeting: Hello world
+  personal:
+    hello: 'Hello %{name}. Take a look at my website: %{url}'

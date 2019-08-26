@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	{% include 'layout/ooc_head' %}
+</head>
+
+<body id="home">
+
+  {% include 'layout/ooc_site_header' %}
+
+	<main>
+		{{ content_for_layout }}
+	</main>
+
+  {% include 'layout/ooc_site_footer' %}
+
+	{% include 'layout/ooc_scripts' %}
+
+</body>
+</html>

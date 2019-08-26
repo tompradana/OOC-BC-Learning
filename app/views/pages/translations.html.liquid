@@ -1,0 +1,29 @@
+---
+slug: translations
+layout_name: my_custom_layout
+metadata:
+  pagetitle: Learning Translations
+  desc: My learning progress
+  tags: ["platformOS","translations", "liquid"]
+  home: yes
+---
+
+{% include 'dynamic_content' %}
+
+<h2>Multi-Language <select onchange="if (this.value) window.location.href=this.value">
+	<option {% if params.language == 'en' %}selected="selected"{% endif %} value="?language=en">English</option>
+	<option {% if params.language == 'pl' %}selected="selected"{% endif %} value="?language=pl">Polish</option>
+	<option {% if params.language == 'jp' %}selected="selected"{% endif %} value="?language=jp">Japanese</option>
+</select></h2>
+
+<h3>Greeting</h3>
+
+{{ 'general.greeting' | t }}
+
+
+<h3>Parameterization</h3>
+
+{% assign my_name = context.params.name | default: "Pawel" %}
+{% assign url = context.params.url | default: "https://example.com" %}
+
+{{ 'personal.hello' | t: name: my_name, url: url }}

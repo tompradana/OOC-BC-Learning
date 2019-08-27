@@ -32,3 +32,12 @@
     </nav>
   </div>
 </div>
+
+{% if context.page.layout_name == 'ooc_page' %}
+<div class="title">
+  <div class="wrapIt">
+    <h1>{{ context.page.metadata.title }}</h1>
+    <div class="clearAll"></div>
+  </div>
+</div>
+{% endif %}

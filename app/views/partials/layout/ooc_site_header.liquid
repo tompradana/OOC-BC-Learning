@@ -33,7 +33,7 @@
   </div>
 </div>
 
-{% if context.page.layout_name == 'ooc_page' %}
+{% if context.page.layout_name == 'ooc_page' or context.page.layout_name == 'ooc_page_2col' %}
 <div class="title">
   <div class="wrapIt">
     <h1>{{ context.page.metadata.title }}</h1>
